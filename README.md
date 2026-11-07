@@ -4,7 +4,7 @@ Bengali festival website for Manab Kalyan Samiti, Ranjan Bazar, Daspara, Dubrajp
 
 ## Run
 
-Open `index.html`, or serve this folder using `python3 -m http.server 8000`. The site requires no build step. Google Fonts is optional and the page falls back to a system font.
+Run `node scripts/build.mjs` with Node.js 22 or later, then serve the output using `python3 -m http.server 8000 --directory dist`. The source `index.html` also opens directly with the two original album photos. Google Fonts is optional and the page falls back to a system font.
 
 ## Content
 
@@ -15,10 +15,10 @@ Open `index.html`, or serve this folder using `python3 -m http.server 8000`. The
 - The map link uses the locality as its destination. Update it if a verified venue pin is provided.
 - Sharing uses native sharing or the clipboard where supported, with a selectable link as a fallback. It appears when the page is served over HTTP or HTTPS.
 
-## Add a year's Puja photos
+## Add Puja photos
 
-Save the deity and temple images under `assets/`. In `index.html`, copy a `memory-slide` figure inside `#memory-track` for each image. Update the file paths, dimensions, alt text, title, and caption. Put newer confirmed photos first. For a confirmed year, replace the eyebrow text with a year element such as `<time datetime="2026">২০২৬</time>`. The carousel builds its controls from the figures and uses the year where provided.
+Follow the [upload instructions](photos/README.md). The album includes every supported image directly under `photos/` and in its four-digit year folders. It uses the file name as the caption and lists the most recent years first. The featured slider uses the selected photos in `index.html`.
 
 ## Hosting
 
-Publish `index.html`, `styles.css`, `site.js`, and `assets/` together. For GitHub Pages, use the root folder of the deployment branch in Settings → Pages.
+Vercel runs the build defined in `vercel.json` and publishes `dist/`. For a manual static upload, publish the contents of `dist/` together.
