@@ -4,34 +4,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="মানব কল্যাণ সমিতির শ্যামা কালীপূজা। বছরের পূজার স্মৃতি, ঠাকুর ও মন্দিরের ছবি, পূজার সূচি ও পথনির্দেশ।">
-  <meta name="theme-color" content="#21102c">
+  <meta name="theme-color" content="#24130e">
   <meta property="og:type" content="website">
   <meta property="og:title" content="শ্যামা কালীপূজা — মানব কল্যাণ সমিতি">
   <meta property="og:description" content="পূজার সূচি, মন্দিরের ছবি ও রঞ্জন বাজার দাসপাড়ার পথনির্দেশ।">
   <title>শ্যামা কালীপূজা — মানব কল্যাণ সমিতি</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&amp;family=Noto+Serif+Bengali:wght@600;700;800&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
 </head>
 <body id="home">
   <a class="skip" href="#main">মূল অংশে যান</a>
 
-  <div class="top">
-    <div class="wrap top-inner">
-      <span>রঞ্জন বাজার দাসপাড়া · দুবরাজপুর, বীরভূম</span>
-      <span class="founded">প্রতিষ্ঠিত ২০০৩</span>
-    </div>
-  </div>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-diya" viewBox="0 0 24 24">
+      <path d="M3 14h18a9 6 0 0 1-18 0ZM12 11a3 3 0 0 1-3-3c0-2 2-3 3-6 1 3 3 4 3 6a3 3 0 0 1-3 3ZM7 22h10"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" rx="2"/>
+      <path d="M7 3v4m10-4v4M3 10h18m-13 5h2m4 0h2"/>
+    </symbol>
+    <symbol id="icon-bowl" viewBox="0 0 24 24">
+      <path d="M3 12h18a9 8 0 0 1-18 0Zm5 9h8M8 8V5m4 3V3m4 5V5"/>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M19 10c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z"/>
+      <circle cx="12" cy="10" r="2"/>
+    </symbol>
+    <symbol id="icon-photo" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="16" rx="2"/>
+      <circle cx="8" cy="9" r="1"/>
+      <path d="m3 17 5-4 4 3 4-5 5 6"/>
+    </symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24">
+      <path d="M6 10a6 6 0 1 1 12 0c0 4 2 6 2 6H4s2-2 2-6Zm4 9a2 2 0 0 0 4 0"/>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="3"/>
+      <path d="m10 9 5 3-5 3Z"/>
+    </symbol>
+  </svg>
 
   <header class="header">
     <div class="wrap header-inner">
       <a class="brand" href="#home">
-        <span class="brand-mark" aria-hidden="true">🪔</span>
+        <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#icon-diya"/></svg></span>
         <span>
           <strong>মানব কল্যাণ সমিতি</strong>
-          <span class="brand-subtitle">রঞ্জন বাজার দাসপাড়া, দুবরাজপুর</span>
+          <span class="brand-subtitle">রঞ্জন বাজার দাসপাড়া · দুবরাজপুর, বীরভূম</span>
         </span>
       </a>
       <button class="menu-toggle" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="navigation" hidden>
@@ -49,29 +71,34 @@
 
   <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-art" aria-hidden="true">
-        <img src="assets/kali-festival.webp" width="772" height="266" alt="" fetchpriority="high">
-      </div>
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span aria-hidden="true">✦</span> মানব কল্যাণ সমিতি আয়োজিত</p>
+          <p class="eyebrow hero-eyebrow">দাসপাড়ার বার্ষিক উৎসব</p>
           <h1 id="hero-title"><span>শ্রী শ্রী শ্যামা</span> কালীপূজা</h1>
-          <p class="hero-intro">আলোর উৎসবে আপনাকে স্বাগত। পরিবার ও বন্ধুদের সঙ্গে মণ্ডপে আসুন।</p>
+          <p class="hero-intro">মানব কল্যাণ সমিতির কালীপূজায় আপনাকে আমন্ত্রণ। পরিবার ও বন্ধুদের সঙ্গে রঞ্জন বাজার দাসপাড়ার মণ্ডপে আসুন।</p>
           <div class="actions">
-            <a class="button button-gold" href="#pandal">মণ্ডপের পথ দেখুন <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="#gallery">পূজার ছবিগুলো দেখুন <span aria-hidden="true">↓</span></a>
+            <a class="button button-gold" href="#gallery"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> পূজার ছবি দেখুন</a>
+            <a class="button button-outline" href="#pandal"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> মণ্ডপের পথ দেখুন</a>
           </div>
+          <p class="hero-meta"><span>প্রতিষ্ঠিত ২০০৩</span><span>দুবরাজপুর, বীরভূম</span></p>
         </div>
+        <figure class="hero-photo">
+          <img src="assets/decorated-temple.webp" width="840" height="1116" alt="ফুল ও আলোয় সাজানো রঞ্জন বাজার দাসপাড়ার শ্যামা কালীমন্দির" fetchpriority="high">
+          <figcaption>
+            <span>রঞ্জন বাজার দাসপাড়া</span>
+            <strong>শ্যামা কালীমন্দির</strong>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <nav class="wrap quick" aria-label="উৎসবের তথ্য">
-      <a href="#schedule"><span aria-hidden="true">📅</span> পূজার সূচি</a>
-      <a href="#prasad"><span aria-hidden="true">🍲</span> ভোগ ও প্রসাদ</a>
-      <a href="#pandal"><span aria-hidden="true">📍</span> মণ্ডপের পথ</a>
-      <a href="#gallery"><span aria-hidden="true">🖼️</span> গ্যালারি</a>
-      <a href="#updates"><span aria-hidden="true">🔔</span> ঘোষণা</a>
-      <a href="#live"><span aria-hidden="true">▶</span> লাইভ সম্প্রচার</a>
+      <a href="#schedule"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg> পূজার সূচি</a>
+      <a href="#prasad"><svg class="icon" aria-hidden="true"><use href="#icon-bowl"/></svg> ভোগ ও প্রসাদ</a>
+      <a href="#pandal"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> মণ্ডপের পথ</a>
+      <a href="#gallery"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> গ্যালারি</a>
+      <a href="#updates"><svg class="icon" aria-hidden="true"><use href="#icon-bell"/></svg> ঘোষণা</a>
+      <a href="#live"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg> লাইভ সম্প্রচার</a>
     </nav>
 
     <div class="wrap content">
@@ -86,7 +113,7 @@
 
         <div class="memory-track" id="memory-track" role="region" aria-label="পূজার স্মৃতির ছবিগুলো">
           <figure class="memory-slide">
-            <img class="memory-photo" src="assets/decorated-temple.webp" width="840" height="1116" alt="রাতে ফুল ও আলো দিয়ে সাজানো রঞ্জন বাজার দাসপাড়ার কালীমন্দির">
+            <img class="memory-photo" src="assets/decorated-temple.webp" width="840" height="1116" loading="lazy" alt="রাতে ফুল ও আলো দিয়ে সাজানো রঞ্জন বাজার দাসপাড়ার কালীমন্দির">
             <figcaption>
               <p class="eyebrow">দাসপাড়ার শ্যামা কালীমন্দির</p>
               <h3>ফুল ও আলোয় সাজানো মন্দির</h3>

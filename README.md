@@ -8,7 +8,7 @@ Open `index.html`, or serve this folder using `python3 -m http.server 8000`. The
 
 ## Content
 
-- The festival banner uses the Kali artwork from the earlier homepage, cropped to the artwork.
+- The homepage features the supplied decorated-temple image.
 - The festival memories gallery opens on the supplied decorated-temple image. It also includes the earlier temple image and separately labels the festival artwork.
 - Add confirmed festival dates and times to the schedule and the confirmed broadcast link to the announcements section in `index.html`.
 - The map link uses the locality as its destination. Update it if a verified venue pin is provided.
