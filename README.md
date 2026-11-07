@@ -9,7 +9,8 @@ Open `index.html`, or serve this folder using `python3 -m http.server 8000`. The
 ## Content
 
 - The homepage features the supplied decorated-temple image.
-- The festival memories gallery opens on the supplied decorated-temple image. It also includes the earlier temple image and separately labels the festival artwork.
+- The festival memories gallery shows the supplied decorated-temple image and the earlier temple photo. The festival artwork is linked separately from the committee section.
+- The homepage and gallery photo links open a full-image viewer where supported. Each link also works as a direct image URL.
 - Add confirmed festival dates and times to the schedule and the confirmed broadcast link to the announcements section in `index.html`.
 - The map link uses the locality as its destination. Update it if a verified venue pin is provided.
 - Sharing uses native sharing or the clipboard where supported, with a selectable link as a fallback. It appears when the page is served over HTTP or HTTPS.
