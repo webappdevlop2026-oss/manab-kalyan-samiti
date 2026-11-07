@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="মানব কল্যাণ সমিতির শ্যামা কালীপূজা। পূজার সূচি, মন্দিরের ছবি, সমিতির ঘোষণা ও রঞ্জন বাজার দাসপাড়ার পথনির্দেশ।">
+  <meta name="description" content="মানব কল্যাণ সমিতির শ্যামা কালীপূজা। বছরের পূজার স্মৃতি, ঠাকুর ও মন্দিরের ছবি, পূজার সূচি ও পথনির্দেশ।">
   <meta name="theme-color" content="#21102c">
   <meta property="og:type" content="website">
   <meta property="og:title" content="শ্যামা কালীপূজা — মানব কল্যাণ সমিতি">
@@ -59,7 +59,7 @@
           <p class="hero-intro">আলোর উৎসবে আপনাকে স্বাগত। পরিবার ও বন্ধুদের সঙ্গে মণ্ডপে আসুন।</p>
           <div class="actions">
             <a class="button button-gold" href="#pandal">মণ্ডপের পথ দেখুন <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="#schedule">পূজার সূচি <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#gallery">পূজার ছবিগুলো দেখুন <span aria-hidden="true">↓</span></a>
           </div>
         </div>
       </div>
@@ -75,6 +75,53 @@
     </nav>
 
     <div class="wrap content">
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow">মানব কল্যাণ সমিতির গ্যালারি</p>
+            <h2 id="gallery-title">বছরের পূজার স্মৃতি</h2>
+          </div>
+          <p>মা শ্যামাকালী, দাসপাড়ার মন্দির ও উৎসবের আলোকসজ্জা।</p>
+        </div>
+
+        <div class="memory-track" id="memory-track" role="region" aria-label="পূজার স্মৃতির ছবিগুলো">
+          <figure class="memory-slide">
+            <img class="memory-photo" src="assets/decorated-temple.webp" width="840" height="1116" alt="রাতে ফুল ও আলো দিয়ে সাজানো রঞ্জন বাজার দাসপাড়ার কালীমন্দির">
+            <figcaption>
+              <p class="eyebrow">দাসপাড়ার শ্যামা কালীমন্দির</p>
+              <h3>ফুল ও আলোয় সাজানো মন্দির</h3>
+              <p>রঞ্জন বাজার দাসপাড়া, দুবরাজপুর, বীরভূম।</p>
+              <a href="assets/decorated-temple.webp">সাজানো মন্দিরের পুরো ছবি দেখুন <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
+          <figure class="memory-slide">
+            <img class="memory-photo memory-photo-archive" src="assets/temple.webp" width="557" height="740" loading="lazy" alt="আগের একটি ছবিতে রাতে দাসপাড়ার কালীমন্দিরের সামনের দৃশ্য">
+            <figcaption>
+              <p class="eyebrow">পুরনো সংগ্রহ</p>
+              <h3>দাসপাড়ার কালীমন্দির</h3>
+              <p>সমিতির সংগ্রহে থাকা মন্দিরের আগের একটি ছবি।</p>
+              <a href="assets/temple.webp">মন্দিরের পুরনো ছবি বড় করে দেখুন <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
+          <figure class="memory-slide">
+            <img class="memory-photo memory-photo-art" src="assets/kali-festival.webp" width="772" height="266" loading="lazy" alt="মা কালী ও আলোয় সাজানো পূজামণ্ডপের শিল্পকর্ম">
+            <figcaption>
+              <p class="eyebrow">উৎসবের শিল্পকর্ম</p>
+              <h3>মা কালী ও আলোকসজ্জা</h3>
+              <p>কালীপূজার আবহ ফুটিয়ে তোলা একটি শিল্পচিত্র।</p>
+              <a href="assets/kali-festival.webp">শিল্পকর্মটি বড় করে দেখুন <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="memory-controls" hidden>
+          <button type="button" class="memory-arrow memory-prev" aria-label="আগের ছবি" aria-controls="memory-track"><span aria-hidden="true">←</span></button>
+          <div class="memory-pages" role="group" aria-label="ছবি বেছে নিন"></div>
+          <button type="button" class="memory-arrow memory-next" aria-label="পরের ছবি" aria-controls="memory-track"><span aria-hidden="true">→</span></button>
+          <span class="memory-position" aria-live="polite" aria-atomic="true"></span>
+        </div>
+      </section>
+
       <div class="visit-grid">
         <section class="card schedule" id="schedule" aria-labelledby="schedule-title">
           <p class="eyebrow">উৎসবের আয়োজন</p>
@@ -94,25 +141,6 @@
           <a class="button button-wine" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ranjan+Bazar+Daspara+Dubrajpur+Birbhum" target="_blank" rel="noopener noreferrer">Google Maps-এ পথ দেখুন <span aria-hidden="true">↗</span></a>
         </section>
       </div>
-
-      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
-        <p class="eyebrow">মন্দির ও উৎসব</p>
-        <h2 id="gallery-title">ছবির গ্যালারি</h2>
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <a href="assets/temple.webp" aria-label="মন্দিরের ছবি বড় করে দেখুন">
-              <img class="temple-image" src="assets/temple.webp" width="557" height="740" loading="lazy" alt="রাতে দাসপাড়ার কালীমন্দিরের সামনের দৃশ্য">
-            </a>
-            <figcaption><strong>দাসপাড়ার কালীমন্দির</strong><span>মন্দিরের ছবি</span></figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <a href="assets/kali-festival.webp" aria-label="কালীমায়ের শিল্পকর্ম বড় করে দেখুন">
-              <img src="assets/kali-festival.webp" width="772" height="266" loading="lazy" alt="মা কালীর সঙ্গে আলোয় সাজানো পূজামণ্ডপের শিল্পকর্ম">
-            </a>
-            <figcaption><strong>মা কালী ও আলোকসজ্জা</strong><span>উৎসবের শিল্পকর্ম</span></figcaption>
-          </figure>
-        </div>
-      </section>
 
       <div class="info-grid">
         <section class="card" id="about" aria-labelledby="about-title">

@@ -40,6 +40,74 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+const memoryTrack = document.querySelector('.memory-track');
+const memorySlides = Array.from(memoryTrack.querySelectorAll('.memory-slide'));
+const memoryControls = document.querySelector('.memory-controls');
+const memoryPages = memoryControls.querySelector('.memory-pages');
+const memoryPosition = memoryControls.querySelector('.memory-position');
+const bengaliNumber = new Intl.NumberFormat('bn-IN');
+
+if (memorySlides.length > 1) {
+  let activeSlide = -1;
+  const lastSlide = memorySlides.length - 1;
+  const slideNumber = (index) => bengaliNumber.format(index + 1);
+  const currentSlide = () => {
+    const width = memoryTrack.clientWidth;
+    return width ? Math.min(lastSlide, Math.max(0, Math.round(memoryTrack.scrollLeft / width))) : 0;
+  };
+
+  function goToSlide(index) {
+    const wrappedIndex = (index + memorySlides.length) % memorySlides.length;
+    memoryTrack.scrollTo({
+      left: wrappedIndex * memoryTrack.clientWidth,
+      behavior: Math.abs(wrappedIndex - currentSlide()) > 1 ? 'instant' : 'auto',
+    });
+  }
+
+  const photoButtons = memorySlides.map((slide, index) => {
+    const button = document.createElement('button');
+    const title = slide.querySelector('h3').textContent;
+    const year = slide.querySelector('time')?.textContent.trim();
+    button.type = 'button';
+    button.textContent = year || slideNumber(index);
+    button.setAttribute('aria-label', year ? year + ' সালের ছবি — ' + title : title);
+    button.setAttribute('aria-controls', memoryTrack.id);
+    button.addEventListener('click', () => goToSlide(index));
+    return button;
+  });
+
+  function updateSlidePosition() {
+    const index = currentSlide();
+    if (index === activeSlide) return;
+    photoButtons[activeSlide]?.removeAttribute('aria-current');
+    photoButtons[index].setAttribute('aria-current', 'true');
+    memoryPosition.textContent = 'ছবি ' + slideNumber(index) + ' / ' + slideNumber(lastSlide);
+    activeSlide = index;
+  }
+
+  memoryPages.append(...photoButtons);
+  memoryTrack.tabIndex = 0;
+  memoryControls.hidden = false;
+  updateSlidePosition();
+
+  memoryTrack.addEventListener('scroll', updateSlidePosition, { passive: true });
+  memoryControls.querySelector('.memory-prev').addEventListener('click', () => goToSlide(currentSlide() - 1));
+  memoryControls.querySelector('.memory-next').addEventListener('click', () => goToSlide(currentSlide() + 1));
+  memoryTrack.addEventListener('keydown', (event) => {
+    if (event.target !== memoryTrack) return;
+    const targets = {
+      ArrowLeft: currentSlide() - 1,
+      ArrowRight: currentSlide() + 1,
+      Home: 0,
+      End: lastSlide,
+    };
+    const target = targets[event.key];
+    if (typeof target !== 'number') return;
+    event.preventDefault();
+    goToSlide(target);
+  });
+}
+
 const sharePanel = document.querySelector('.share');
 const shareButton = sharePanel.querySelector('button');
 const shareStatus = sharePanel.querySelector('.share-status');
