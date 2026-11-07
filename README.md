@@ -1,27 +1,19 @@
 # মানব কল্যাণ সমিতি
 
-Official Bengali website for **Manab Kalyan Samiti**, Ranjanbazar Das Para, Dubrajpur, Birbhum, West Bengal. Established in 2003.
+Bengali festival website for Manab Kalyan Samiti, Ranjan Bazar, Daspara, Dubrajpur, Birbhum. Established 2003.
+
+## Run
+Open `index.html`, or serve this folder using `python3 -m http.server 8000`. No build step is required. The original Kali artwork is embedded in the HTML. Google Fonts is optional; the system font is used when offline.
 
 ## Features
+- Original purple, gold and cream festival layout and Kali artwork retained
+- Responsive desktop and mobile navigation, keyboard focus and Escape support
+- Festival information and Google Maps route link
+- Native invitation sharing or clipboard copy on supported secure browsers
+- Back to top, reduced motion support and print layout
 
-- Responsive Bengali homepage with festival theme
-- Shyama Kali Puja and Diwali greetings
-- Society introduction, community activities and festival sections
-- Gallery placeholders for future real event photographs
-- Address and contact-message copy form
-- Single static `index.html` file; no build tools required
+## Content
+Event times, live broadcast URL, real gallery photos and committee contact numbers await confirmed information. Illustrations are labelled as symbolic images. There is no backend or submission form.
 
-## Preview
-
-Open `index.html` in any browser.
-
-## Publish using GitHub Pages
-
-1. Open repository **Settings → Pages**.
-2. Set **Build and deployment → Deploy from a branch**.
-3. Select the repository's default branch and `/ (root)`, then **Save**.
-4. Open the published link displayed by GitHub Pages once the deployment is completed.
-
-## Notes
-
-Gallery items are illustrations/placeholders and not actual photos. Event dates, times and official contact details are not yet provided and should be confirmed before publishing. The contact form copies a prepared message to the clipboard; it does not send emails or save submissions.
+## Hosting
+Upload `index.html` to a static host. For GitHub Pages, select the `main` branch and root folder in Settings → Pages. Sharing requires an online URL.
