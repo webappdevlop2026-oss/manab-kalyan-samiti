@@ -65,7 +65,7 @@
       <nav class="menu" id="navigation" aria-label="প্রধান মেনু">
         <a href="#about">পরিচিতি</a>
         <a href="#schedule">পূজার সূচি</a>
-        <a href="#gallery">গ্যালারি</a>
+        <a href="#all-photos">সব পূজার ছবি</a>
         <a href="#updates">ঘোষণা</a>
         <a class="nav-contact" href="#contact">যোগাযোগ</a>
       </nav>
@@ -80,7 +80,7 @@
           <h1 id="hero-title"><span>শ্রী শ্রী শ্যামা</span> কালীপূজা</h1>
           <p class="hero-intro">রঞ্জন বাজার দাসপাড়ার শ্যামা কালীমন্দিরে মানব কল্যাণ সমিতির বার্ষিক পূজা। পরিবার ও বন্ধুদের নিয়ে মণ্ডপে আসুন।</p>
           <div class="actions">
-            <a class="button button-gold" href="#gallery"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> পূজার ছবি দেখুন</a>
+            <a class="button button-gold" href="#all-photos"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> পূজার ছবি দেখুন</a>
             <a class="button button-outline" href="#pandal"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> মণ্ডপের পথ দেখুন</a>
           </div>
           <p class="hero-meta"><span>প্রতিষ্ঠিত ২০০৩</span><span>দুবরাজপুর, বীরভূম</span></p>
@@ -102,7 +102,7 @@
       <a href="#schedule"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg> পূজার সূচি</a>
       <a href="#prasad"><svg class="icon" aria-hidden="true"><use href="#icon-bowl"/></svg> ভোগ ও প্রসাদ</a>
       <a href="#pandal"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> মণ্ডপের পথ</a>
-      <a href="#gallery"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> গ্যালারি</a>
+      <a href="#all-photos"><svg class="icon" aria-hidden="true"><use href="#icon-photo"/></svg> সব ছবি</a>
       <a href="#updates"><svg class="icon" aria-hidden="true"><use href="#icon-bell"/></svg> ঘোষণা</a>
       <a href="#live"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg> লাইভ সম্প্রচার</a>
     </nav>
@@ -114,7 +114,7 @@
             <p class="eyebrow">মানব কল্যাণ সমিতির গ্যালারি</p>
             <h2 id="gallery-title">বছরের পূজার স্মৃতি</h2>
           </div>
-          <p>দাসপাড়ার মন্দিরের ছবি। ছবিতে চাপ দিলে পুরোটা দেখা যাবে।</p>
+          <a class="text-link" href="#all-photos">সব পূজার ছবি দেখুন <span aria-hidden="true">↓</span></a>
         </div>
 
         <div class="memory-track" id="memory-track" role="region" aria-label="পূজার স্মৃতির ছবিগুলো">
@@ -147,6 +147,39 @@
           <div class="memory-pages" role="group" aria-label="ছবি বেছে নিন"></div>
           <button type="button" class="memory-arrow memory-next" aria-label="পরের ছবি" aria-controls="memory-track"><span aria-hidden="true">→</span></button>
           <span class="memory-position" aria-live="polite" aria-atomic="true"></span>
+        </div>
+      </section>
+
+      <section class="photo-album" id="all-photos" aria-labelledby="album-title">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow">মানব কল্যাণ সমিতির ছবির সংগ্রহ</p>
+            <h2 id="album-title">সব পূজার ছবি</h2>
+          </div>
+          <p>সাল অনুযায়ী পূজার ছবি দেখুন। ছবিতে চাপ দিলে পুরোটা খুলবে।</p>
+        </div>
+
+        <!-- puja-photo-years -->
+
+        <div class="album-group">
+          <h3>অন্যান্য ছবি</h3>
+          <div class="album-grid">
+            <figure class="album-photo">
+              <a class="photo-link" data-photo href="assets/decorated-temple.webp" aria-label="সাজানো মন্দিরের ছবি বড় করে দেখুন">
+                <img src="assets/decorated-temple.webp" width="840" height="1116" loading="lazy" alt="ফুল ও আলোয় সাজানো রঞ্জন বাজার দাসপাড়ার শ্যামা কালীমন্দির">
+                <span class="photo-expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
+              </a>
+              <figcaption>ফুল ও আলোয় সাজানো মন্দির</figcaption>
+            </figure>
+            <figure class="album-photo">
+              <a class="photo-link" data-photo href="assets/temple.webp" aria-label="আগের মন্দিরের ছবি বড় করে দেখুন">
+                <img src="assets/temple.webp" width="557" height="740" loading="lazy" alt="রাতে দাসপাড়ার শ্যামা কালীমন্দিরের আগের ছবি">
+                <span class="photo-expand" aria-hidden="true"><svg class="icon"><use href="#icon-expand"/></svg></span>
+              </a>
+              <figcaption>দাসপাড়ার মন্দিরের আগের ছবি</figcaption>
+            </figure>
+            <!-- puja-photo-undated -->
+          </div>
         </div>
       </section>
 
