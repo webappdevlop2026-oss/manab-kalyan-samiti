@@ -3,17 +3,22 @@
 Bengali festival website for Manab Kalyan Samiti, Ranjan Bazar, Daspara, Dubrajpur, Birbhum. Established 2003.
 
 ## Run
-Open `index.html`, or serve this folder using `python3 -m http.server 8000`. No build step is required. The original Kali artwork is embedded in the HTML. Google Fonts is optional; the system font is used when offline.
 
-## Features
-- Original purple, gold and cream festival layout and Kali artwork retained
-- Responsive desktop and mobile navigation, keyboard focus and Escape support
-- Festival information and Google Maps route link
-- Native invitation sharing or clipboard copy on supported secure browsers
-- Back to top, reduced motion support and print layout
+Open `index.html`, or serve this folder using `python3 -m http.server 8000`. The site requires no build step. Google Fonts is optional and the page falls back to a system font.
 
 ## Content
-Event times, live broadcast URL, real gallery photos and committee contact numbers await confirmed information. Illustrations are labelled as symbolic images. There is no backend or submission form.
+
+- The homepage features the supplied decorated-temple image.
+- The festival memories gallery shows the supplied decorated-temple image and the earlier temple photo. The festival artwork is linked separately from the committee section.
+- The homepage and gallery photo links open a full-image viewer where supported. Each link also works as a direct image URL.
+- Add confirmed festival dates and times to the schedule and the confirmed broadcast link to the announcements section in `index.html`.
+- The map link uses the locality as its destination. Update it if a verified venue pin is provided.
+- Sharing uses native sharing or the clipboard where supported, with a selectable link as a fallback. It appears when the page is served over HTTP or HTTPS.
+
+## Add a year's Puja photos
+
+Save the deity and temple images under `assets/`. In `index.html`, copy a `memory-slide` figure inside `#memory-track` for each image. Update the file paths, dimensions, alt text, title, and caption. Put newer confirmed photos first. For a confirmed year, replace the eyebrow text with a year element such as `<time datetime="2026">২০২৬</time>`. The carousel builds its controls from the figures and uses the year where provided.
 
 ## Hosting
-Upload `index.html` to a static host. For GitHub Pages, select the `main` branch and root folder in Settings → Pages. Sharing requires an online URL.
+
+Publish `index.html`, `styles.css`, `site.js`, and `assets/` together. For GitHub Pages, use the root folder of the deployment branch in Settings → Pages.
